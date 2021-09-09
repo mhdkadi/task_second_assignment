@@ -95,6 +95,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         width: double.infinity,
                         child: TextField(
                           keyboardType: TextInputType.emailAddress,
+                          onChanged: (newValue) => email = newValue,
                           onSubmitted: (newValue) => email = newValue,
                           decoration: InputDecoration(
                             focusedBorder: UnderlineInputBorder(
@@ -117,6 +118,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         width: double.infinity,
                         child: TextField(
                           obscureText: true,
+                          onChanged: (newValue) => password = newValue,
                           onSubmitted: (newValue) => password = newValue,
                           decoration: InputDecoration(
                             enabledBorder: UnderlineInputBorder(
